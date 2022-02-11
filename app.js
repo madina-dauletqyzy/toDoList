@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let items = [];
 
+app.use(express.static(__dirname + '/public/css'));
+
 app.get('/', function(req, res){
     
     let today = new Date();
